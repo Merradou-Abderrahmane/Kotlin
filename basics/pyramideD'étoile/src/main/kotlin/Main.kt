@@ -4,8 +4,15 @@ fun main (){
    println("Enter a number")
    val input: Int = readln().toInt()
 // 2. print a * for each number (to change it later to a pyramid of stars)
-   for (input in 1..input){
-      println("*")
+//    for (input in 1..input){
+//       println("*")
+//    }
+// 3. print a triangle of stars
+   for (i in 1..input){
+      for (j in 1..i){
+         print("*")
+      }
+      println()
    }
 
 
