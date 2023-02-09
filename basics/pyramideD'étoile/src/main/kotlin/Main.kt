@@ -3,4 +3,10 @@
 fun main (){
    println("Enter a number")
    val input: Int = readln().toInt()
+// 2. print a * for each number
+   for (input in 1..input){
+      println("*")
+   }
+
+
 }
