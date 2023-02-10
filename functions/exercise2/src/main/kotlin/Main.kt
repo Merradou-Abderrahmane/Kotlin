@@ -1,7 +1,7 @@
 val products = mutableListOf<String>()
 fun addProduct() {
     print("Enter a product: ")
-    val product = readLine()!!.toString()
+    val product = readln()!!.toString()
     products.add(product)
 }
 
@@ -14,7 +14,7 @@ fun showProducts() {
 
 fun removeProduct() {
     print("Enter a product: ")
-    val product = readLine()!!.toString()
+    val product = readln()!!.toString()
     products.remove(product)
     // show the products after removing one
     showProducts()
@@ -28,7 +28,7 @@ fun main() {
         println("3. Show products")
         println("4. Exit")
         print("Enter an option: ")
-        option = readLine()!!.toInt()
+        option = readln()!!.toInt()
         when (option) {
             1 -> addProduct()
             2 -> removeProduct()
