@@ -1,7 +1,10 @@
 package exercise3.myapp
 
-class Produit {
-fun test(){
-    print("Hello world")
-}
+class Produit (name: String, price: Int) {
+    var name: String = name
+    var price: Int = price
+
+    fun print(){
+        print("product name is $name it's price is $price ")
+    }
 }

@@ -1,6 +1,7 @@
 package exercise3.myapp
 
 fun main(){
-    var produit1 = Produit()
-    produit1.test()
+
+    var newProduit = Produit("Milk", 50)
+    newProduit.print()
 }
