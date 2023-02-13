@@ -1,3 +1,4 @@
+## Basics
 Kotlin is very similar to other languages when it comes to the basics like operators, lists, and loops, but there are some important differences.
 
 The following features may be different in Kotlin than what you're used to in other languages:
@@ -12,4 +13,10 @@ Arrays and lists can have a single type or mixed types.
 Arrays and lists can be nested.
 You can create loops with for, while, do/while, and repeat.
 The when statement is Kotlin's version of the switch statement, but when is more flexible.
+
+## Functions
+
+
+## Classes and objects
+Under the hood, Kotlin automatically creates getters and setters for the properties you defined in the Aquarium class,
   
