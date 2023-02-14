@@ -18,5 +18,13 @@ The when statement is Kotlin's version of the switch statement, but when is more
 
 
 ## Classes and objects
-Under the hood, Kotlin automatically creates getters and setters for the properties you defined in the Aquarium class,
-  
+- Under the hood, Kotlin automatically creates getters and setters for the properties you defined in the Aquarium class,but you can also define your own getters and setters.
+
+- Kotlin classes can have primary and secondary constructors. The primary constructor is part of the class header. Secondary constructors are defined inside the class body.
+
+- In Kotlin, classes, objects, interfaces, constructors, functions, properties, and their setters can have visibility modifiers:
+   - public means visible outside the class. Everything is public by default, including variables and methods of the class.
+   - internal means it will only be visible within that module. A module is a set of Kotlin files compiled together, for example, a library or application.
+   - private means it will only be visible in that class (or source file if you are working with functions).
+   - protected is the same as private, but it will also be visible to any subclasses.
+
