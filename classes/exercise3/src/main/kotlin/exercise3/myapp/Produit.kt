@@ -1,4 +1,4 @@
 package exercise3.myapp
 
-abstract class Produit (val name: String, val price: Double) {
+abstract class Product (val name: String, val price: Double) {
 }
