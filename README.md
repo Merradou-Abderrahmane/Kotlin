@@ -27,4 +27,13 @@ The when statement is Kotlin's version of the switch statement, but when is more
    - internal means it will only be visible within that module. A module is a set of Kotlin files compiled together, for example, a library or application.
    - private means it will only be visible in that class (or source file if you are working with functions).
    - protected is the same as private, but it will also be visible to any subclasses.
+- Member variables :
+Properties within a class, or member variables, are public by default. If you define them with var, they are mutable, that is, readable and writable. If you define them with val, they are read-only after initialization.
+If you want a property that your code can read or write, but outside code can only read, you can leave the property and its getter as public and declare the setter private, as shown below.
+- Inheritance and subclasses :
+In Kotlin, by default, classes cannot be subclassed. Similarly, properties and member variables cannot be overridden by subclasses (though they can be accessed).
+You must mark a class as open to allow it to be subclassed. Similarly, you must mark properties and member variables as open, in order to override them in the subclass. The open keyword is required, to prevent accidentally leaking implementation details as part of the class's interface.
+Note: Subclasses must declare their constructor parameters explicitly.
+
+
 
