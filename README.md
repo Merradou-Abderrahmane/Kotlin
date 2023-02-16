@@ -56,3 +56,29 @@ Note: You could have used == to check whether d1 == d2 and d3 == d2. In Kotlin, 
          Because the classes and subclasses are in the same file, Kotlin will know all the subclasses statically. That is, at compile time, the compiler sees all the classes and subclasses and knows that this is all of them, so the compiler can do extra checks for you.
          RK : sealed classes are great for returning success or error from a network API.
 
+- Summery to Object oriented programming in kotlin : 
+Classes and constructors
+Define a class in Kotlin using class.
+Kotlin automatically creates setters and getters for properties.
+Define the primary constructor directly in the class definition. For example: class Aquarium(var length: Int = 100, var width: Int = 20, var height: Int = 40)
+If a primary constructor needs additional code, write it in one or more init blocks.
+A class can define one or more secondary constructors using constructor, but Kotlin style is to use a factory function instead.
+Visibility modifiers and subclasses
+All classes and functions in Kotlin are public by default, but you can use modifiers to change the visibility to internal, private, or protected.
+To make a subclass, the parent class must be marked open.
+To override methods and properties in a subclass, the methods and properties must be marked open in the parent class.
+A sealed class can be subclassed only in the same file where it is defined. Make a sealed class by prefixing the declaration with sealed.
+Data classes, singletons, and enums
+Make a data class by prefixing the declaration with data.
+Destructuring is a shorthand for assigning the properties of a data object to separate variables.
+Make a singleton class by using object instead of class.
+Define an enum using enum class.
+Abstract classes, interfaces, and delegation
+Abstract classes and interfaces are two ways to share common behavior between classes.
+An abstract class defines properties and behavior, but leaves the implementation to subclasses.
+An interface defines behavior, and may provide default implementations for some or all of the behavior.
+When you use interfaces to compose a class, the class's functionality is extended by way of the class instances that it contains.
+Interface delegation uses composition, but also delegates the implementation to the interface classes.
+Composition is a powerful way to add functionality to a class using interface delegation. In general composition is preferred, but inheritance from an abstract class is a better fit for some problems.
+
+
